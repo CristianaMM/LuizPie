@@ -3,5 +3,28 @@ body {
   overflow-x: hidden;
 }
 
+.sideBar {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  background-color: #4658a9;
+  padding: 80px;
+}
+
+.title {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+}
+
+.mediaLink {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.luizPieImg {
+  width: 100%;
+}
+
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Playfair Display', serif; */
