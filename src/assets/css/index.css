@@ -3,6 +3,30 @@ body {
   overflow-x: hidden;
 }
 
+.dots {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid #4455a2;
+  background-color: white;
+  margin: 20px 25px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #4455a2;
+}
+
 .sideBar {
   width: 30%;
   height: 100vh;
@@ -205,10 +229,10 @@ a {
     left: 5%;
   }
   .whiteDivSpace {
-    padding: 80px 20px;
+    padding: 80px 30px;
   }
   .greyDivSpace {
-    padding: 20px;
+    padding: 30px;
   }
 
   .contactForm {
@@ -216,10 +240,13 @@ a {
   }
 
   #contato .whiteDivSpace {
-    padding: 80px 20px 20px 20px;
+    padding: 80px 30px 30px 30px;
   }
 
   .mobileFooter {
     display: block;
+  }
+  .dots {
+    display: none;
   }
 }

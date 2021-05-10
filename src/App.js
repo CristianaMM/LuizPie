@@ -6,11 +6,13 @@ import SecondQuote from "./components/SecondQuote";
 import Biografia from "./components/Biografia";
 import Contato from "./components/Contato";
 import MobileFooter from "./components/MobileFooter";
+import PaginationDots from "./components/PaginationDots";
 
 export default function App() {
   return (
     <div>
       <SideBar />
+      <PaginationDots />
       <div className="main-content">
         <FirstQuote />
         <Album />

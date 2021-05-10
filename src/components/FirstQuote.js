@@ -11,7 +11,9 @@ export default function FirstQuote() {
         </h4>
 
         <h5>Nilton Nascimento</h5>
-        <img className="arrow" src={arrow} alt="scroll down" />
+        <a href="#album">
+          <img className="arrow" src={arrow} alt="scroll down" />
+        </a>
       </div>
     </div>
   );
