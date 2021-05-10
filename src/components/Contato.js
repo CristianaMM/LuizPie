@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contato() {
   return (
-    <div className="contato">
+    <div id="contato">
       <div className="whiteDivSpace">
         <h4>Contato</h4>
         <div className="contactForm">

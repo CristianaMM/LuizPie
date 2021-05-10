@@ -3,7 +3,7 @@ import arrow from "../assets/imgs/arrow.png";
 
 export default function FirstQuote() {
   return (
-    <div className="quote">
+    <div id="firstQuote" className="quote">
       <div className="whiteDivSpace">
         <h4>
           Quando aparece alguém assim com bom gosto e oferece sua alma e coração

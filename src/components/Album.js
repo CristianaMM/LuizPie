@@ -1,18 +1,18 @@
 import React from "react";
 import { Col, Row } from "react-flexbox-grid";
-import album from "../assets/imgs/cd2.png";
+import album from "../assets/imgs/cd.png";
 import appleMusic from "../assets/imgs/applemusic_b.png";
 import spotify from "../assets/imgs/spotify_b.png";
 
 export default function Album() {
   return (
-    <div className="greyDiv">
+    <div id="album" className="greyDiv">
       <div className="greyDivSpace">
         <Row>
-          <Col sm={12}>
+          <Col xs={12}>
             <h4>Memória Afetiva</h4>
           </Col>
-          <Col sm={12}>
+          <Col xs={12}>
             <p>
               É o álbum de estreia de Luiz Pié e conta com participação especial
               de Milton Nascimento e inédita de Roberto Menescal e Paulinho
@@ -20,32 +20,32 @@ export default function Album() {
             </p>
           </Col>
         </Row>
-        <Row middle="xs">
-          <Col xs={4}>
+        <Row middle="xs" center="xs" start="md">
+          <Col xs={9} md={5}>
             <img className="albumImg" src={album} alt="Memória afetiva Album" />
           </Col>
-          <Col sm={8}>
-            <Row>
-              <Col sm={12}>
-                <Row>
-                  <Col sm={1}>
+          <Col xs={9} md={7}>
+            <Row start="xs" className="acessar">
+              <Col xs={12}>
+                <Row middle="xs">
+                  <Col mdOffset={1} xs={4} md={2}>
                     <img
                       className="iconImg"
                       src={appleMusic}
                       alt="Apple Music Icon"
                     />
                   </Col>
-                  <Col sm={11}>
+                  <Col xs={8} md={9}>
                     <a>Acessar no Apple Music</a>
                   </Col>
                 </Row>
               </Col>
-              <Col sm={12}>
-                <Row>
-                  <Col sm={1}>
+              <Col xs={12}>
+                <Row middle="xs">
+                  <Col mdOffset={1} xs={4} md={2}>
                     <img className="iconImg" src={spotify} alt="Spotify Icon" />
                   </Col>
-                  <Col sm={11}>
+                  <Col xs={8} md={9}>
                     <a>Acessar no Spotify</a>
                   </Col>
                 </Row>

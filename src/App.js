@@ -5,6 +5,7 @@ import Album from "./components/Album";
 import SecondQuote from "./components/SecondQuote";
 import Biografia from "./components/Biografia";
 import Contato from "./components/Contato";
+import MobileFooter from "./components/MobileFooter";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Biografia />
         <Contato />
       </div>
+      <MobileFooter />
     </div>
   );
 }

@@ -11,33 +11,33 @@ export default function SideBar() {
   return (
     <div className="sideBar">
       <div className="barTextContent">
-        <Row>
+        <Row center="xs" start="md">
           <Col xs={12}>
             <h1 className="title">Luiz Pié</h1>
           </Col>
         </Row>
-        <Row>
-          <Col xs={2}>
+        <Row center="xs" start="md">
+          <Col className="iconCol" xs={2}>
             <a className="mediaLink">
               <img className="mediaImg" src={appleMusic} alt="apple music" />{" "}
             </a>
           </Col>
-          <Col xs={2}>
+          <Col className="iconCol" xs={2}>
             <a className="mediaLink">
               <img className="mediaImg" src={spotify} alt="spotify" />
             </a>
           </Col>
-          <Col xs={2}>
+          <Col className="iconCol" xs={2}>
             <a className="mediaLink">
               <img className="mediaImg" src={youtube} alt="youtube" />
             </a>
           </Col>
-          <Col xs={2}>
+          <Col className="iconCol" xs={2}>
             <a className="mediaLink">
               <img className="mediaImg" src={instagram} alt="instagram" />
             </a>
           </Col>
-          <Col xs={2}>
+          <Col className="iconCol" xs={2}>
             <a className="mediaLink">
               <img className="mediaImg" src={facebook} alt="facebook" />
             </a>
