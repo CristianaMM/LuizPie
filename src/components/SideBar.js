@@ -5,26 +5,45 @@ import youtube from "../assets/imgs/youtube.png";
 import instagram from "../assets/imgs/intagram.png";
 import facebook from "../assets/imgs/fb.png";
 import luizpie from "../assets/imgs/luizpie.png";
+import { Col, Row } from "react-flexbox-grid";
 
 export default function SideBar() {
   return (
     <div className="sideBar">
-      <h1 className="title">Luiz Pié</h1>
-      <a className="mediaLink">
-        <img src={appleMusic} alt="apple music" />{" "}
-      </a>
-      <a className="mediaLink">
-        <img src={spotify} alt="spotify" />
-      </a>
-      <a className="mediaLink">
-        <img src={youtube} alt="youtube" />
-      </a>
-      <a className="mediaLink">
-        <img src={instagram} alt="instagram" />
-      </a>
-      <a className="mediaLink">
-        <img src={facebook} alt="facebook" />
-      </a>
+      <div className="barTextContent">
+        <Row>
+          <Col xs={12}>
+            <h1 className="title">Luiz Pié</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={2}>
+            <a className="mediaLink">
+              <img className="mediaImg" src={appleMusic} alt="apple music" />{" "}
+            </a>
+          </Col>
+          <Col xs={2}>
+            <a className="mediaLink">
+              <img className="mediaImg" src={spotify} alt="spotify" />
+            </a>
+          </Col>
+          <Col xs={2}>
+            <a className="mediaLink">
+              <img className="mediaImg" src={youtube} alt="youtube" />
+            </a>
+          </Col>
+          <Col xs={2}>
+            <a className="mediaLink">
+              <img className="mediaImg" src={instagram} alt="instagram" />
+            </a>
+          </Col>
+          <Col xs={2}>
+            <a className="mediaLink">
+              <img className="mediaImg" src={facebook} alt="facebook" />
+            </a>
+          </Col>
+        </Row>
+      </div>
       <img className="luizPieImg" src={luizpie} alt="Luiz Pié" />
     </div>
   );

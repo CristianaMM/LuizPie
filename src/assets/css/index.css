@@ -4,27 +4,152 @@ body {
 }
 
 .sideBar {
-  width: 25%;
-  height: 100%;
+  width: 30%;
+  height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: #4658a9;
-  padding: 80px;
+}
+
+.barTextContent {
+  padding: 45px 65px;
 }
 
 .title {
   color: white;
   font-family: "Playfair Display", serif;
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .mediaLink {
-  padding-right: 20px;
   cursor: pointer;
+}
+
+.mediaImg {
+  width: 100%;
 }
 
 .luizPieImg {
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-content {
+  position: absolute;
+  top: 0;
+  padding: 0 0 0 30%;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  color: #4658a9;
+  font-size: 25px;
+  margin: 0;
+  font-weight: normal;
+}
+
+h5 {
+  font-family: "Manrope", sans-serif;
+  color: #4658a9;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+p {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #4455a2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contato {
+  min-height: 100vh;
+  text-align: justify;
+  position: relative;
+  display: flex;
+}
+
+.quote {
+  min-height: 100vh;
+  text-align: justify;
+  position: relative;
+  display: flex;
+}
+.whiteDivSpace {
+  padding: 70px;
+  align-self: center;
+}
+
+.quote h4::before {
+  content: open-quote;
+  content: open-quote;
+  position: relative;
+  top: 20px;
+  font-size: 50px;
+  margin-right: 10px;
+}
+.quote h4::after {
+  content: close-quote;
+  content: close-quote;
+  position: relative;
+  top: 20px;
+  font-size: 50px;
+  line-height: 25px;
+  margin-left: 10px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+}
+
+.greyDiv {
+  min-height: 100vh;
+  background-color: #ededed;
+  text-align: justify;
+  position: relative;
+  display: flex;
+}
+
+.greyDivSpace {
+  padding: 70px;
+  align-self: center;
+}
+
+.albumImg {
+  width: 100%;
+}
+
+.iconImg {
+  width: 100%;
+}
+
+.contactForm {
+  margin: 30px 0;
+}
+
+.contactForm p {
+  margin: 0;
 }
 
 /* font-family: 'Manrope', sans-serif;
 font-family: 'Playfair Display', serif; */
+
+@media only screen and (min-width: 1025px) {
+  .luizPieImg {
+    width: 85%;
+  }
+}
