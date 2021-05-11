@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function PaginationDots() {
+export default function PaginationDots(props) {
+  const { activePage, setActivePage } = props;
+
   const pages = [
     { ref: "firstQuote" },
     { ref: "album" },
@@ -13,8 +15,14 @@ export default function PaginationDots() {
       {pages &&
         pages.map((p) => {
           return (
-            <a href={`#${p.ref}`} key={`dot-${p.ref}`}>
-              <div className="dot"></div>
+            <a
+              href={`#${p.ref}`}
+              onClick={() => setActivePage(p.ref)}
+              key={`dot-${p.ref}`}
+            >
+              <div
+                className={activePage === p.ref ? "dot active" : "dot"}
+              ></div>
             </a>
           );
         })}
