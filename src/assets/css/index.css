@@ -18,9 +18,9 @@ body {
 
 .dot {
   display: block;
-  width: 5px;
-  height: 5px;
-  border-radius: 2.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
   border: 1px solid #4455a2;
   background-color: white;
   margin: 20px 25px;
