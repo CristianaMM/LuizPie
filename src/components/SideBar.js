@@ -1,11 +1,7 @@
 import React from "react";
-import appleMusic from "../assets/imgs/applemusic.png";
-import spotify from "../assets/imgs/spotify.png";
-import youtube from "../assets/imgs/youtube.png";
-import instagram from "../assets/imgs/intagram.png";
-import facebook from "../assets/imgs/fb.png";
 import luizpie from "../assets/imgs/luizpie.png";
 import { Col, Row } from "react-flexbox-grid";
+import MediaAnchors from "./MediaAnchors";
 
 export default function SideBar() {
   return (
@@ -17,31 +13,7 @@ export default function SideBar() {
           </Col>
         </Row>
         <Row center="xs" start="md">
-          <Col className="iconCol" xs={2}>
-            <a className="mediaLink">
-              <img className="mediaImg" src={appleMusic} alt="apple music" />{" "}
-            </a>
-          </Col>
-          <Col className="iconCol" xs={2}>
-            <a className="mediaLink">
-              <img className="mediaImg" src={spotify} alt="spotify" />
-            </a>
-          </Col>
-          <Col className="iconCol" xs={2}>
-            <a className="mediaLink">
-              <img className="mediaImg" src={youtube} alt="youtube" />
-            </a>
-          </Col>
-          <Col className="iconCol" xs={2}>
-            <a className="mediaLink">
-              <img className="mediaImg" src={instagram} alt="instagram" />
-            </a>
-          </Col>
-          <Col className="iconCol" xs={2}>
-            <a className="mediaLink">
-              <img className="mediaImg" src={facebook} alt="facebook" />
-            </a>
-          </Col>
+          <MediaAnchors keyWord="side-bar" />
         </Row>
       </div>
       <img className="luizPieImg" src={luizpie} alt="Luiz Pié" />

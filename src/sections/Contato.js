@@ -9,21 +9,29 @@ export default function Contato() {
           <p>
             <strong>Contato para shows</strong>
           </p>
-          <p>luizpiecontato@gmail.com</p>
+          <a href="mailto:luizpiecontato@gmail.com">
+            <p>luizpiecontato@gmail.com</p>
+          </a>
         </div>
         <div className="contactForm">
           <p>
             <strong>Contato show internacional</strong>
           </p>
-          <p>Miyako.luizpie@gmail.com</p>
+          <a href="mailto:Miyako.luizpie@gmail.com">
+            <p>Miyako.luizpie@gmail.com</p>
+          </a>
         </div>
         <div className="contactForm">
           <p>
             <strong>Contato Imprensa </strong>
           </p>
           <p>Mattoso Vinicius Produções Artísticas</p>
-          <p>+55 (21) 2523.1553</p>
-          <p>mattosovinicius@mattosovinicius.com.br</p>
+          <a href="tel:+55 2125231553">
+            <p>+55 (21) 2523.1553</p>
+          </a>
+          <a href="mailto:mattosovinicius@mattosovinicius.com.br">
+            <p>mattosovinicius@mattosovinicius.com.br</p>
+          </a>
         </div>
       </div>
     </div>

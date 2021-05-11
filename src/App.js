@@ -1,12 +1,11 @@
 import React from "react";
 import SideBar from "./components/SideBar";
-import FirstQuote from "./components/FirstQuote";
-import Album from "./components/Album";
-import SecondQuote from "./components/SecondQuote";
-import Biografia from "./components/Biografia";
-import Contato from "./components/Contato";
+import Album from "./sections/Album";
+import Biografia from "./sections/Biografia";
+import Contato from "./sections/Contato";
 import MobileFooter from "./components/MobileFooter";
 import PaginationDots from "./components/PaginationDots";
+import Quote from "./sections/Quote";
 
 export default function App() {
   return (
@@ -14,9 +13,18 @@ export default function App() {
       <SideBar />
       <PaginationDots />
       <div className="main-content">
-        <FirstQuote />
+        <Quote
+          mainQuote="Quando aparece alguém assim com bom gosto e oferece sua alma e coração
+          pra gente, o mundo se torna mais feliz e acreditável."
+          author="Nilton Nascimento"
+          moreInfoArrow={true}
+        />
         <Album />
-        <SecondQuote />
+        <Quote
+          mainQuote="Se eu tivesse a sua voz, eu conquistaria o mundo!"
+          author="Roberto Menescal"
+          moreInfoArrow={false}
+        />
         <Biografia />
         <Contato />
       </div>

@@ -1,23 +1,23 @@
 import React from "react";
 
 export default function PaginationDots() {
+  const pages = [
+    { ref: "firstQuote" },
+    { ref: "album" },
+    { ref: "secondQuote" },
+    { ref: "biografia" },
+    { ref: "contato" },
+  ];
   return (
     <div className="dots">
-      <a href="#firstQuote">
-        <div className="dot active"></div>
-      </a>
-      <a href="#album">
-        <div className="dot"></div>
-      </a>
-      <a href="#secondQuote">
-        <div className="dot"></div>
-      </a>
-      <a href="#biografia">
-        <div className="dot"></div>
-      </a>
-      <a href="#contato">
-        <div className="dot"></div>
-      </a>
+      {pages &&
+        pages.map((p) => {
+          return (
+            <a href={`#${p.ref}`} key={`dot-${p.ref}`}>
+              <div className="dot"></div>
+            </a>
+          );
+        })}
     </div>
   );
 }
