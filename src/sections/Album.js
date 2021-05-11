@@ -36,7 +36,13 @@ export default function Album() {
                     />
                   </Col>
                   <Col xs={8} md={9}>
-                    <a>Acessar no Apple Music</a>
+                    <a
+                      href="https://music.apple.com/us/album/mem%C3%B3ria-afetiva/1025103452"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Acessar no Apple Music
+                    </a>
                   </Col>
                 </Row>
               </Col>
@@ -46,7 +52,13 @@ export default function Album() {
                     <img className="iconImg" src={spotify} alt="Spotify Icon" />
                   </Col>
                   <Col xs={8} md={9}>
-                    <a>Acessar no Spotify</a>
+                    <a
+                      href="https://open.spotify.com/album/2Iooe4YVKvrTHkpasUALai"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Acessar no Spotify
+                    </a>
                   </Col>
                 </Row>
               </Col>
