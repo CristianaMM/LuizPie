@@ -3,5 +3,253 @@ body {
   overflow-x: hidden;
 }
 
-/* font-family: 'Manrope', sans-serif;
-font-family: 'Playfair Display', serif; */
+.dots {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  border: 1px solid #4455a2;
+  background-color: white;
+  margin: 20px 25px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #4455a2;
+}
+
+.sideBar {
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4658a9;
+}
+
+.barTextContent {
+  padding: 45px 34px;
+}
+
+.title {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.mediaLink {
+  cursor: pointer;
+}
+
+.mediaImg {
+  width: 100%;
+  max-width: 30px;
+}
+
+.sideBar .col-xs-2 {
+  padding: 2px;
+}
+
+.luizPieImg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-content {
+  padding: 0 0 0 30%;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  color: #4658a9;
+  font-size: 25px;
+  margin: 0;
+  font-weight: normal;
+}
+
+h5 {
+  font-family: "Manrope", sans-serif;
+  color: #4658a9;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+p {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #4455a2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#album p {
+  padding: 20px 0;
+}
+
+.acessar .col-xs-12 {
+  padding: 20px 0;
+}
+
+#contato {
+  min-height: 100vh;
+  text-align: justify;
+  position: relative;
+  display: flex;
+}
+
+.quote {
+  min-height: 100vh;
+  text-align: justify;
+  position: relative;
+  display: flex;
+}
+.whiteDivSpace {
+  padding: 70px;
+  align-self: center;
+}
+
+.quote h4::before {
+  content: open-quote;
+  content: open-quote;
+  position: relative;
+  top: 20px;
+  font-size: 50px;
+  margin-right: 10px;
+}
+.quote h4::after {
+  content: close-quote;
+  content: close-quote;
+  position: relative;
+  top: 20px;
+  font-size: 50px;
+  line-height: 25px;
+  margin-left: 10px;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  width: 15px;
+}
+
+.greyDiv {
+  min-height: 100vh;
+  background-color: #ededed;
+  text-align: justify;
+  position: relative;
+  display: flex;
+}
+
+.greyDivSpace {
+  padding: 70px;
+  align-self: center;
+}
+
+.albumImg {
+  width: 100%;
+}
+
+.iconImg {
+  width: 100%;
+  max-width: 30px;
+}
+
+.contactForm {
+  margin: 30px 0;
+}
+
+.contactForm p {
+  margin: 0;
+}
+
+#contato a {
+  text-decoration: none;
+  color: black;
+}
+
+.mobileFooter {
+  display: none;
+  background-color: #4658a9;
+  padding: 40px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .luizPieImg {
+    width: 85%;
+  }
+  .barTextContent {
+    padding: 45px 65px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .sideBar {
+    width: 100%;
+    position: relative;
+  }
+  .main-content {
+    width: 100%;
+    padding: 0;
+  }
+  #contato {
+    min-height: 0;
+    display: block;
+  }
+  .quote {
+    min-height: 0;
+    display: block;
+  }
+  .greyDiv {
+    min-height: 0;
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  .luizPieImg {
+    width: 90%;
+    left: 5%;
+  }
+  .whiteDivSpace {
+    padding: 80px 30px;
+  }
+  .greyDivSpace {
+    padding: 30px;
+  }
+
+  .contactForm {
+    margin: 30px 0;
+  }
+
+  #contato .whiteDivSpace {
+    padding: 80px 30px 30px 30px;
+  }
+
+  .mobileFooter {
+    display: block;
+  }
+  .dots {
+    display: none;
+  }
+}
