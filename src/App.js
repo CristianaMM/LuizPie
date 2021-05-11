@@ -17,13 +17,14 @@ export default function App() {
           mainQuote="Quando aparece alguém assim com bom gosto e oferece sua alma e coração
           pra gente, o mundo se torna mais feliz e acreditável."
           author="Nilton Nascimento"
-          moreInfoArrow={true}
+          arrowRef="#album"
+          sectionID="firstQuote"
         />
         <Album />
         <Quote
           mainQuote="Se eu tivesse a sua voz, eu conquistaria o mundo!"
           author="Roberto Menescal"
-          moreInfoArrow={false}
+          sectionID="secondQuote"
         />
         <Biografia />
         <Contato />
