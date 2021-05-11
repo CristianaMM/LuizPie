@@ -14,6 +14,11 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 100;
+  list-style: none;
+}
+
+.dots li.active .dot {
+  background-color: #4455a2;
 }
 
 .dot {
@@ -25,10 +30,6 @@ body {
   background-color: white;
   margin: 20px 25px;
   cursor: pointer;
-}
-
-.dot.active {
-  background-color: #4455a2;
 }
 
 .sideBar {

@@ -1,31 +1,21 @@
 import React from "react";
+import Scrollspy from "react-scrollspy";
 
-export default function PaginationDots(props) {
-  const { activePage, setActivePage } = props;
-
-  const pages = [
-    { ref: "firstQuote" },
-    { ref: "album" },
-    { ref: "secondQuote" },
-    { ref: "biografia" },
-    { ref: "contato" },
-  ];
+export default function PaginationDots() {
+  const pages = ["firstQuote", "album", "secondQuote", "biografia", "contato"];
   return (
-    <div className="dots">
-      {pages &&
-        pages.map((p) => {
-          return (
-            <a
-              href={`#${p.ref}`}
-              onClick={() => setActivePage(p.ref)}
-              key={`dot-${p.ref}`}
-            >
-              <div
-                className={activePage === p.ref ? "dot active" : "dot"}
-              ></div>
-            </a>
-          );
-        })}
-    </div>
+    <Scrollspy
+      className="dots"
+      items={["firstQuote", "album", "secondQuote", "biografia", "contato"]}
+      currentClassName="active"
+    >
+      {pages.map((p) => (
+        <li key={`dot-item-${p}`}>
+          <a href={`#${p}`}>
+            <div className="dot"></div>
+          </a>
+        </li>
+      ))}
+    </Scrollspy>
   );
 }
