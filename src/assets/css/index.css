@@ -118,7 +118,6 @@ a {
 
 .quote {
   min-height: 100vh;
-  text-align: justify;
   position: relative;
   display: flex;
 }
@@ -203,7 +202,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   .sideBar {
     width: 100%;
     position: relative;
@@ -228,8 +227,8 @@ a {
     display: none;
   }
   .luizPieImg {
-    width: 90%;
-    left: 5%;
+    width: 40%;
+    left: 30%;
   }
   .whiteDivSpace {
     padding: 80px 30px;
@@ -251,5 +250,12 @@ a {
   }
   .dots {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .luizPieImg {
+    width: 90%;
+    left: 5%;
   }
 }
