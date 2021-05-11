@@ -22,7 +22,7 @@ export default function MediaAnchors(props) {
         media.map((m) => {
           return (
             <Col className="iconCol" xs={2} key={`${keyWord}-${m.alt}`}>
-              <a className="mediaLink">
+              <a className="mediaLink" href="" target="_blank">
                 <img className="mediaImg" src={m.img} alt={m.alt} />
               </a>
             </Col>
