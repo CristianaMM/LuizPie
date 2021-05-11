@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SideBar from "./components/SideBar";
 import Album from "./sections/Album";
 import Biografia from "./sections/Biografia";
@@ -8,12 +8,10 @@ import PaginationDots from "./components/PaginationDots";
 import Quote from "./sections/Quote";
 
 export default function App() {
-  const [activePage, setActivePage] = useState("firstQuote");
-
   return (
     <div>
       <SideBar />
-      <PaginationDots activePage={activePage} setActivePage={setActivePage} />
+      <PaginationDots />
       <div className="main-content">
         <Quote
           mainQuote="Quando aparece alguém assim com bom gosto e oferece sua alma e coração
