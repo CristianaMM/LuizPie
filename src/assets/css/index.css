@@ -118,7 +118,6 @@ a {
 
 .quote {
   min-height: 100vh;
-  text-align: justify;
   position: relative;
   display: flex;
 }
@@ -194,16 +193,17 @@ a {
   padding: 40px;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .luizPieImg {
     width: 85%;
+    left: 7.5%;
   }
   .barTextContent {
     padding: 45px 65px;
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   .sideBar {
     width: 100%;
     position: relative;
@@ -228,8 +228,8 @@ a {
     display: none;
   }
   .luizPieImg {
-    width: 90%;
-    left: 5%;
+    width: 50%;
+    left: 25%;
   }
   .whiteDivSpace {
     padding: 80px 30px;
@@ -251,5 +251,26 @@ a {
   }
   .dots {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .luizPieImg {
+    width: 60%;
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .luizPieImg {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .luizPieImg {
+    width: 80%;
+    left: 10%;
   }
 }

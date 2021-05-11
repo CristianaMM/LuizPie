@@ -3,7 +3,6 @@ import arrow from "../assets/imgs/arrow.png";
 
 export default function Quote(props) {
   const { mainQuote, author, sectionID, arrowRef } = props;
-  console.log(sectionID);
   return (
     <div id={sectionID} className="quote">
       <div className="whiteDivSpace">
